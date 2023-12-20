@@ -1,0 +1,118 @@
+/* UNIVERSAL */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* MAIN-CONTAINER */
+.main-container {
+    width: 100%;
+    min-height: 650px;
+    text-align: center;
+}
+
+.main-container h1 {
+    font-size: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding:0px 10px 0px 10px;
+}
+
+.main-container p {
+    font-size: 20px;
+    color:gray;
+    padding: 10px 10px 30px 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* CARDS */
+.cards {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    gap:30px;
+}
+
+/* DEVICE */
+.device {
+    min-height:350px;
+    padding:15px;
+    box-shadow: 0px 0px 40px gray;
+    border-radius:10px;
+}
+
+.device h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background-color: teal;
+    color: white;
+    width: 135px;
+    min-height: 20px;
+    border-radius: 8px;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+}
+
+.device img {
+    padding-top: 20px;
+    margin-bottom:5px;
+}
+
+.cards .device:nth-child(2) img {
+    padding-top: 50px;
+    margin-bottom:30px;
+}
+
+.cards .device:nth-child(3) img {
+    padding-top: 50px;
+    margin-bottom:5px;
+}
+
+.device h3,
+h5 {
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:19px;
+}
+
+.device h5 {
+    color:rgb(96, 92, 92);
+    padding-top:6px;
+}
+
+.main-container button {
+    margin:50px 0px 50px 0px;
+    border:1px solid gray;
+    background-color: unset;
+    color:navy;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:18px;
+    border-radius:25px;
+    padding:10px 20px 10px 20px;
+}
+
+@media only screen and (min-width:300px) and (max-width:407px) {
+.main-container h1 {
+    font-size:30px;
+}
+
+.main-container p {
+    font-size:20px;
+}
+}
+
+@media only screen and (min-width:408px) and (max-width:432px) {
+    .main-container h1 {
+        font-size:40px;
+    }
+    
+}
+
+@media only screen and (min-width:433px) and (max-width:570px) {
+    .main-container h1 {
+        font-size:45px;
+    }
+    
+}
